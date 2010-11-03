@@ -1,0 +1,10 @@
+*.swp
+*.pyc
+*.pyo
+/_source/.installed.cfg
+/_source/.mr.developer.cfg
+/_source/bin/
+/_source/include/
+/_source/lib/
+/_source/develop-eggs/
+/_source/src/
