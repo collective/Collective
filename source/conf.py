@@ -51,7 +51,7 @@ copyright = u'2010, Rok Garbas <rok@garbas.si>'
 # built documents.
 #
 # The short X.Y version.
-version = datetime.datetime.today().strftime('%Y-%m-%d')
+version = 'Last updated: '+datetime.datetime.today().strftime('%b %d, %Y')
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -95,6 +95,7 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = 'nature'
+html_style = 'custom.css'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -135,7 +136,7 @@ html_last_updated_fmt = '%b %d, %Y'
 
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
-    '**': [],
+    '**': ['searchbox.html', 'globaltoc.html'],
 }
 
 # Additional templates that should be rendered to pages, maps page names to

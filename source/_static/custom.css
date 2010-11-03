@@ -1,0 +1,21 @@
+@import "nature.css";
+
+body {
+    background: #FFF;
+}
+
+div.related {
+    background: #329FD7;
+}
+div.related a {
+    color: #FFFFFF;
+}
+
+#searchbox p.searchtip {
+    display: none;
+}
+div.sphinxsidebar form {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
