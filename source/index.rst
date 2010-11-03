@@ -15,9 +15,6 @@ enthusiasts who think service like github could bring some order in the mess
 we have in svn-collective. And instead of working in our own github accounts,
 we bring the spirit of Plone collective to github.
 
-
-Contents:
-
 .. toctree::
     :maxdepth: 2
 
