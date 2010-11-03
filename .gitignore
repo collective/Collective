@@ -2,10 +2,10 @@
 *.swo
 *.pyc
 *.pyo
-/_source/.installed.cfg
-/_source/.mr.developer.cfg
-/_source/bin/
-/_source/include/
-/_source/lib/
-/_source/develop-eggs/
-/_source/src/
+/source/.installed.cfg
+/source/.mr.developer.cfg
+/source/bin/
+/source/include/
+/source/lib/
+/source/develop-eggs/
+/source/src/
