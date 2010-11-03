@@ -1,4 +1,5 @@
 *.swp
+*.swo
 *.pyc
 *.pyo
 /_source/.installed.cfg
