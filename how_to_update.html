@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Index &mdash; collective.github.com - Last updated: Nov 03, 2010</title>
+    <title>How to update this page &mdash; collective.github.com - Last updated: Nov 03, 2010</title>
     <link rel="stylesheet" href="static/custom.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -26,15 +26,19 @@
           href="static/opensearch.xml"/>
     <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="author" title="About these documents" href="about.html" />
-    <link rel="top" title="collective.github.com - Last updated: Nov 03, 2010" href="index.html" /> 
+    <link rel="top" title="collective.github.com - Last updated: Nov 03, 2010" href="index.html" />
+    <link rel="prev" title="Who this evaluation are for?" href="about.html" /> 
   </head>
   <body>
     <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="#" title="General Index"
+          <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="about.html" title="Who this evaluation are for?"
+             accesskey="P">previous</a> |</li>
         <li><a href="index.html">collective.github.com - Last updated: Nov 03, 2010</a> &raquo;</li> 
       </ul>
     </div>  
@@ -44,12 +48,58 @@
         <div class="bodywrapper">
           <div class="body">
             
-
-   <h1 id="index">Index</h1>
-
-   <div class="genindex-jumpbox">
-   
-   </div>
+  <div class="section" id="how-to-update-this-page">
+<h1>How to update this page<a class="headerlink" href="#how-to-update-this-page" title="Permalink to this headline">¶</a></h1>
+<p>This page is created using Sphinx. In order to update it I would advise you
+to head to <a class="reference external" href="http://sphinx.pocoo.org">http://sphinx.pocoo.org</a> and get familiar with Sphinx and
+ReStructeredText.</p>
+<ol class="arabic simple">
+<li>Clone <a class="reference external" href="http://github.com/collective">collective.github.com</a> repository</li>
+</ol>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git clone git@github.com:collective/collective.github.com
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>Run buildout</li>
+</ol>
+<p>Source is located in <cite>source</cite> directory. Please be careful that you don&#8217;t
+mix it up with <cite>sources</cite> folder.</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> <span class="nb">cd source</span>
+<span class="go">source/ $ virtualenv --no-site-packages .</span>
+<span class="go">source/ $ . bin/activate</span>
+<span class="go">source/ $ python bootstrap.py</span>
+<span class="go">source/ $ bin/buildout</span>
+</pre></div>
+</div>
+<p>This will install all needed. Now its time for you to edit .rst files.</p>
+<ol class="arabic simple" start="3">
+<li>Generate html</li>
+</ol>
+<p>After editing .rst files you need to &#8220;compile&#8221; html.</p>
+<p><strong>IMPORTANT</strong>
+Make sure site looks nice when rendered. It will be compiled in root of
+package.</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="go">source/ $ make html</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li>Commit changes</li>
+</ol>
+<p>For nice history please commit changes to .rst files separatly then
+changes to compiled site.</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="go">source/ $ git commit -a -m &quot;Some very important changes&quot;</span>
+<span class="go">source/ $ cd ..</span>
+<span class="gp">$</span> git commit -a -m <span class="s2">&quot;Upload up html&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li>Don&#8217;t forget to push</li>
+</ol>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git push origin master
+</pre></div>
+</div>
+<p>And thas all folks...</p>
+</div>
 
 
           </div>
@@ -74,10 +124,10 @@
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
 <h3><a href="index.html">Table Of Contents</a></h3>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_to_git.html">New to git?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">Who this evaluation are for?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="how_to_update.html">How to update this page</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">How to update this page</a></li>
 </ul>
 
         </div>
@@ -88,8 +138,11 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="#" title="General Index"
+          <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="about.html" title="Who this evaluation are for?"
+             >previous</a> |</li>
         <li><a href="index.html">collective.github.com - Last updated: Nov 03, 2010</a> &raquo;</li> 
       </ul>
     </div>

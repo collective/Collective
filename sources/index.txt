@@ -20,6 +20,8 @@ we bring the spirit of Plone collective to github.
 
     new_to_git
     about
+    how_to_update
+
 
 .. _`github/collective`: http://github.com/organization/collective
 .. _`svn/collective`: http://svn.plone.org/svn/collective
