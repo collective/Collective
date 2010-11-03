@@ -1,0 +1,196 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>New to git? &mdash; collective.github.com - Last updated: Nov 03, 2010</title>
+    <link rel="stylesheet" href="static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     'Last updated: Nov 03, 2010',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within collective.github.com - Last updated: Nov 03, 2010"
+          href="static/opensearch.xml"/>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="top" title="collective.github.com - Last updated: Nov 03, 2010" href="index.html" />
+    <link rel="next" title="Who this evaluation are for?" href="about.html" />
+    <link rel="prev" title="github/collective - experimental (repeat: experimental) for possible enhancement of svn/collective" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="about.html" title="Who this evaluation are for?"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="github/collective - experimental (repeat: experimental) for possible enhancement of svn/collective"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">collective.github.com - Last updated: Nov 03, 2010</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="new-to-git">
+<h1>New to git?<a class="headerlink" href="#new-to-git" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="useful-links">
+<h2>Useful links<a class="headerlink" href="#useful-links" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<ul class="simple">
+<li><a class="reference external" href="http://gitref.org">http://gitref.org</a></li>
+<li><a class="reference external" href="http://www.gitready.com">http://www.gitready.com</a></li>
+<li><a class="reference external" href="http://progit.org/book">http://progit.org/book</a></li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="quick-guide">
+<h2>Quick guide<a class="headerlink" href="#quick-guide" title="Permalink to this headline">¶</a></h2>
+<p>When I switched to git I got used to a specific git workflow, inspired
+by my previous experience with subversion. these are just a handful of
+commands and a tiny bit of git&#8217;s full capabilities but it may be useful
+for you as well. (by <a class="reference external" href="mailto:raggam-nl&#37;&#52;&#48;adm&#46;at">Johannes Raggam</a>)</p>
+<div class="section" id="global-settings">
+<h3>Global Settings<a class="headerlink" href="#global-settings" title="Permalink to this headline">¶</a></h3>
+<p>Essential</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git config --global user.name <span class="s2">&quot;USERS NAME&quot;</span>
+<span class="gp">$</span> git config --global user.email USERS@EMAIL
+</pre></div>
+</div>
+<p>Create global gitignore</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> <span class="nb">echo</span> -e <span class="s2">&quot;*.mo\n*.pyc\n*.pyo&quot;</span> &gt; ~/.gitignore
+<span class="gp">$</span> git config --global core.excludesfile ~/.gitignore
+</pre></div>
+</div>
+</div>
+<div class="section" id="cloning">
+<h3>Cloning<a class="headerlink" href="#cloning" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git clone git@github.com:USERNAME/REPOSITORYNAME.git
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating">
+<h3>Creating<a class="headerlink" href="#creating" title="Permalink to this headline">¶</a></h3>
+<p>First, create a github project on github.com
+Second, create a project on your local computer and initialize it</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> mkdir PROJECT
+<span class="gp">$</span> <span class="nb">cd </span>PROJECT
+<span class="gp">$</span> git init <span class="c"># initialize git versioning in current directory</span>
+<span class="gp">$</span> git remote add origin git@github.com:USERNAME/REPOSITORYNAME.git
+</pre></div>
+</div>
+<p>These settings will let you push with just &#8220;git push&#8221; as command</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git config branch.master.merge refs/heads/master
+<span class="gp">$</span> git config branch.master.remote origin
+</pre></div>
+</div>
+<p>Create local gitignore</p>
+<div class="highlight-console"><pre>$ echo -e "bin\ndev\ndevelop-eggs\neggs\nparts\n*.egg-info\n.*
+    \n!.gitignore" &gt; .gitignore</pre>
+</div>
+<p>Add files, commit and push</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git add . <span class="c"># add current dir and subdirs to project</span>
+<span class="gp">$</span> git commit -am<span class="s2">&quot;MESSAGE&quot;</span> <span class="c"># commit all staged changes</span>
+<span class="gp">$</span> git commit FILE -m<span class="s2">&quot;MESSAGE&quot;</span> <span class="c"># commit FILE</span>
+<span class="gp">$</span> git push <span class="c"># push changes to master on github</span>
+
+<span class="gp">$</span> git pull <span class="c"># update</span>
+<span class="gp">$</span> git fetch <span class="c"># or so</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="some-more-useful-resources">
+<h2>Some more useful resources<a class="headerlink" href="#some-more-useful-resources" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<ul>
+<li><dl class="first docutils">
+<dt>Interesting doc about git rebasing instead of merging branches:</dt>
+<dd><p class="first last"><a class="reference external" href="http://jbowes.wordpress.com/2007/01/26/git-rebase-keeping-your-branches-current">http://jbowes.wordpress.com/2007/01/26/git-rebase-keeping-your-branches-current</a></p>
+</dd>
+</dl>
+</li>
+</ul>
+</blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="static/logo.png" alt="Logo"/>
+            </a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3><a href="index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">New to git?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#useful-links">Useful links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-guide">Quick guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#some-more-useful-resources">Some more useful resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">Who this evaluation are for?</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="about.html" title="Who this evaluation are for?"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="github/collective - experimental (repeat: experimental) for possible enhancement of svn/collective"
+             >previous</a> |</li>
+        <li><a href="index.html">collective.github.com - Last updated: Nov 03, 2010</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2010, Rok Garbas &lt;rok@garbas.si&gt;.
+      Last updated on Nov 03, 2010.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.4.
+    </div>
+  </body>
+</html>
