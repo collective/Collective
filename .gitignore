@@ -2,6 +2,7 @@
 *.swo
 *.pyc
 *.pyo
+/.buildinfo
 /source/.installed.cfg
 /source/.mr.developer.cfg
 /source/bin/
