@@ -58,3 +58,4 @@ changes to compiled site.
 
 And thas all folks...
 
+.. _`collective.github.com`: http://github.com/collective
