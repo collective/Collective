@@ -17,6 +17,17 @@ div.body h1 {
     padding: 0 0.5em;
     text-shadow: 0 1px 0 #444444;
 }
+
+div.bodywrapper {
+    margin: 0 300px 0 230px;
+}
+div.sphinxsidebar {
+    margin-left: 0;
+}
+div.documentwrapper {
+    float: none;
+}
+
 div.related {
     background: #329FD7;
 }
@@ -32,3 +43,40 @@ div.sphinxsidebar form {
     font-size: 15px;
 }
 
+#zrssfeed-collective {
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    top: 32px;
+    width: 300px;
+}
+div.rssHeader {
+    background-color: #DDDDDD;
+    color: #222222;
+    font-family: Arial,sans-serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0;
+    padding: 5px 10px;
+    text-shadow: 1px 1px 0 white;
+}
+div.rssHeader a {
+    color: #222222;
+    text-shadow: 1px 1px 0 white;
+}
+div.rssBody ul {
+    list-style: none;
+    color: #000000;
+    margin: 10px 20px;
+    padding: 0;
+}
+li.rssRow h4 {
+    margin-bottom: 0;
+}
+li.rssRow div {
+    float: right;
+    font-size: 80%;
+}
+li.rssRow p {
+    margin-top: 0.3em;
+}
