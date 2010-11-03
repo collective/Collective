@@ -28,7 +28,10 @@
     <link rel="author" title="About these documents" href="#" />
     <link rel="top" title="collective.github.com - Last updated: Nov 03, 2010" href="index.html" />
     <link rel="next" title="How to update this page" href="how_to_update.html" />
-    <link rel="prev" title="New to git?" href="new_to_git.html" /> 
+    <link rel="prev" title="New to git?" href="new_to_git.html" />
+    <script src="static/jquery.min.js" type="text/javascript"></script>
+    <script src="static/jquery.zrssfeed.min.js" type="text/javascript"></script>
+
   </head>
   <body>
     <div class="related">
@@ -45,9 +48,51 @@
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">collective.github.com - Last updated: Nov 03, 2010</a> &raquo;</li> 
       </ul>
-    </div>  
+    </div>
 
     <div class="document">
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="static/logo.png" alt="Logo"/>
+            </a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3><a href="index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="new_to_git.html">New to git?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Who this evaluation are for?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#why-we-didn-t-ask-wider-plone-community-and-raise-debate-on-mailing-list-first">Why we didn&#8217;t ask wider Plone Community and raise debate on mailing list first?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#but-i-don-t-like-git-i-think-x-place-your-favorite-vcs-here-is-better-and-easier-to-learn">But I don&#8217;t like git, I think X (place your favorite VCS here) is better and easier to learn?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#and-after-evaluation-period">And after evaluation period?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_update.html">How to update this page</a></li>
+</ul>
+
+        </div>
+      </div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#zrssfeed-collective').rssfeed('https://github.com/collective.atom', {
+        limit: 5
+    });
+});
+</script>
+<div id="zrssfeed-collective"></div>
+
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body">
@@ -109,38 +154,7 @@ github/collective a friendly place to share code.</p>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-            <p class="logo"><a href="index.html">
-              <img class="logo" src="static/logo.png" alt="Logo"/>
-            </a></p>
-<div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" size="18" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-<h3><a href="index.html">Table Of Contents</a></h3>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="new_to_git.html">New to git?</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Who this evaluation are for?</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#why-we-didn-t-ask-wider-plone-community-and-raise-debate-on-mailing-list-first">Why we didn&#8217;t ask wider Plone Community and raise debate on mailing list first?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#but-i-don-t-like-git-i-think-x-place-your-favorite-vcs-here-is-better-and-easier-to-learn">But I don&#8217;t like git, I think X (place your favorite VCS here) is better and easier to learn?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#and-after-evaluation-period">And after evaluation period?</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="how_to_update.html">How to update this page</a></li>
-</ul>
 
-        </div>
-      </div>
       <div class="clearer"></div>
     </div>
     <div class="related">

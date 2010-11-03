@@ -1,0 +1,8 @@
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#zrssfeed-collective').rssfeed('https://github.com/collective.atom').ajaxStop(function() {
+        $('#zrssfeed-collective div.rssBody').vTicker();
+    });
+});
+</script>
+<div id="zrssfeed-collective"></div>

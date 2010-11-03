@@ -1,5 +1,5 @@
-github/collective - experimental (repeat: experimental) for possible enhancement of svn/collective
-==================================================================================================
+github/collective - experimental (repeat: experimental)
+=======================================================
 
 Recently we started organization on github called "collective". You could
 consider `github/collective`_ as evaluation area for possible enhancement of
