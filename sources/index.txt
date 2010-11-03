@@ -1,20 +1,28 @@
-.. collective.github.com documentation master file, created by
-   sphinx-quickstart on Tue Nov  2 18:21:34 2010.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+github/collective - experimental (repeat: experimental) for possible enhancement of svn/collective
+==================================================================================================
 
-Welcome to collective.github.com's documentation!
-=================================================
+Recently we started organization on github called "collective". You could
+consider `github/collective`_ as evaluation area for possible enhancement of
+current `svn/collective`_.
+
+**Keep in mind this is experimental, experimental and once again
+experimental.**
+
+I'm not sure how best to emphasis this, but this is nothing officially
+supported or started from Plone Fundation, but they probably appreciate any
+effort to make development processes easier. We are just bunch of git
+enthusiasts who think service like github could bring some order in the mess
+we have in svn-collective. And instead of working in our own github accounts,
+we bring the spirit of Plone collective to github.
+
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-Indices and tables
-==================
+    new_to_git
+    about
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+.. _`github/collective`: http://github.com/organization/collective
+.. _`svn/collective`: http://svn.plone.org/svn/collective
