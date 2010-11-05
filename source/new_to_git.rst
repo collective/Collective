@@ -44,7 +44,10 @@ Cloning
 Creating
 ^^^^^^^^
 
-First, create a github project on github.com
+First, create a github project on `github.com collective`_
+
+.. _github.com collective: https://github.com/organizations/collective
+
 Second, create a project on your local computer and initialize it
 
 .. code-block:: console
@@ -52,7 +55,7 @@ Second, create a project on your local computer and initialize it
     $ mkdir PROJECT
     $ cd PROJECT
     $ git init # initialize git versioning in current directory
-    $ git remote add origin git@github.com:USERNAME/REPOSITORYNAME.git
+    $ git remote add origin git@github.com:collective/REPOSITORYNAME.git
 
 These settings will let you push with just "git push" as command
 
