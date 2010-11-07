@@ -5,8 +5,11 @@ Recently we started organization on github called "collective". You could
 consider `github/collective`_ as evaluation area for possible enhancement of
 current `svn/collective`_.
 
-**Keep in mind this is experimental, experimental and once again
-experimental.**
+
+.. important::
+
+    Keep in mind this is experimental, experimental and once again
+    experimental.
 
 I'm not sure how best to emphasis this, but this is nothing officially
 supported or started from Plone Fundation, but they probably appreciate any
