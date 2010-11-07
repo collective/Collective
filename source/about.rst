@@ -1,5 +1,5 @@
-Who this evaluation are for?
-============================
+Who this evaluation is for?
+===========================
 
 `github/collective`_ is ment for:
 
