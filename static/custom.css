@@ -4,18 +4,26 @@ body {
     background: #FFF;
 }
 
+div.body {
+    padding: 0;
+}
 div.body h1 {
     background-color: #76AD17;
     border-bottom: 1em solid #63A100;
+    border-top: 0;
     color: #FFF;
     font-size: 1.5em;
     font-weight: normal;
     height: 1em;
     letter-spacing: 0;
     line-height: 2em;
-    margin: -1px -1px 0;
+    margin: 0;
     padding: 0 0.5em;
     text-shadow: 0 1px 0 #444444;
+}
+div.section > p,
+div.section > div.admonition {
+    margin: 1em;
 }
 
 div.bodywrapper {
@@ -79,4 +87,19 @@ li.rssRow div {
 }
 li.rssRow p {
     margin-top: 0.3em;
+}
+
+div.important {
+    border: 1px solid #FF0000;
+    padding: 0;
+}
+div.important p.last {
+    line-height: 2.5em;
+}
+div.important p.admonition-title {
+    background: #FF0000;
+    color: #FFFFFF;
+    padding: 0.5em;
+    display: block;
+    float: left;
 }
