@@ -46,6 +46,7 @@ More information
     new_to_git
     about
     how_to_update
+    how_to_transifex
 
 
 .. _`collective@garbas.si`: mailto:collective@garbas.si
