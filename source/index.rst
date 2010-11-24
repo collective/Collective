@@ -26,7 +26,7 @@ Nothing really to actually add from what you've been used to from
 `svn/collective`_. By default you are added to gihub/collective 'All' group.
 You are then able to create new project inside collective organisation. Once you
 create them you set who all has rights to participate in this project. By default
-it will add everybody from 'All' group to be able to read adn write to project.
+it will add everybody from 'All' group to be able to read and write to project.
 
 
 How to get access
