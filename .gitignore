@@ -3,7 +3,10 @@
 *.pyc
 *.pyo
 /.buildinfo
+/bin/
 /doctrees/
+/include/
+/lib/
 /source/.installed.cfg
 /source/.mr.developer.cfg
 /source/bin/
