@@ -37,13 +37,13 @@ at `Transifex/Plone`_ to be able to add your project as 'component'.
 Once you have added your project follow the steps described under 'Submission'
 tab:
 
-* validate the repository
- * download README.transifex from Transifex.
- * add it to your repository
- * push it to github/collective/yourproject
-* check allow submission
-* choose 'The upstream repository directly'
-* And voila, it's working !
+    * validate the repository
+        * download README.transifex from Transifex.
+        * add it to your repository
+        * push it to github/collective/yourproject
+    * check allow submission
+    * choose 'The upstream repository directly'
+    * And voila, it's working !
 
 The first commit from transifex to github/collective is available here:
 https://github.com/collective/collective.gallery/commit/dfccbfb530ee984459630ae32ef8a8020f72e9d2
