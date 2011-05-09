@@ -47,7 +47,7 @@ More information
     about
     how_to_update
     how_to_transifex
-
+    how_to_followcommits
 
 .. _`collective@garbas.si`: mailto:collective@garbas.si
 .. _`github/collective`: http://github.com/organization/collective
