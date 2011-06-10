@@ -1,7 +1,7 @@
 Who this evaluation is for?
 ===========================
 
-`github/collective`_ is ment for:
+`github/collective`_ is meant for:
 
     * developers who are already familiar with git or the not feeling afraid
     * their companies are already using git or even github for their work
@@ -17,8 +17,8 @@ Main reason is that I tried to talk with many people about this and what I got
 back was speculations "Git is too hard to learn." and some more speculations
 "Github can not fit into the collective way of working together.". And I don't
 blame them ... really I don't. So I'm on a missing to collect some facts. Facts
-about wheather we could use service like github in spirit of collective and
-improve our way of working together. This reasies a number of different
+about whether we could use service like github in spirit of collective and
+improve our way of working together. This raises a number of different
 questions, from administration point of view, to documentation point of view ...
 since this is impossible to predict and to explore in advance we need to take
 this steps slowly and have some "experimental group" doing this for us.
@@ -31,7 +31,7 @@ this steps slowly and have some "experimental group" doing this for us.
 But I don't like git, I think X (place your favorite VCS here) is better and easier to learn?
 ---------------------------------------------------------------------------------------------
 
-Ok heard that a lot of times. Maybe you did't notice but in text above I was not
+OK, I have heard that a lot of times. Maybe you didn't notice but in text above I was not
 mentioning git at all. Yes I was always talking about github. But why is that
 different? I'm not on a mission how to convert all of you to use git, I want to
 explore how "social coding" might benefit us. If you don't want to use git you can

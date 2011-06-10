@@ -1,7 +1,7 @@
 How to follow commits
 =====================
 
-With svn collective you are used to follow commits (suscribed to the collective-checkins@lists.sourceforge.net 
+With svn collective you are used to follow commits (subscribed to the collective-checkins@lists.sourceforge.net 
 mailing list).
 
 With github it can be achieved by using a private rss feed.

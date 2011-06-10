@@ -3,7 +3,7 @@ How to update this page
 
 This page is created using Sphinx. In order to update it I would advise you
 to head to http://sphinx.pocoo.org and get familiar with Sphinx and
-ReStructeredText.
+reStructeredText.
 
 1. Clone `collective.github.com`_ repository
 
@@ -13,8 +13,8 @@ ReStructeredText.
 
 2. Run buildout
 
-Source is located in `source` directory. Please be careful that you don't
-mix it up with `sources` folder.
+Source is located in ``source`` directory. Please be careful that you don't
+mix it up with ``sources`` folder.
 
 .. code-block:: console
 
@@ -24,11 +24,11 @@ mix it up with `sources` folder.
     source/ $ python bootstrap.py
     source/ $ bin/buildout
 
-This will install all needed. Now its time for you to edit .rst files.
+This will install all needed. Now its time for you to edit ``.rst`` files.
 
 3. Generate html
 
-After editing .rst files you need to "compile" html.
+After editing ``.rst`` files you need to "compile" html.
 
 **IMPORTANT**
 Make sure site looks nice when rendered. It will be compiled in root of
@@ -40,7 +40,7 @@ package.
 
 4. Commit changes
 
-For nice history please commit changes to .rst files separatly then
+For nice history please commit changes to ``.rst`` files separately then
 changes to compiled site.
 
 .. code-block:: console
@@ -56,6 +56,6 @@ changes to compiled site.
     $ git push origin master
 
 
-And thas all folks...
+And that's all folks...
 
 .. _`collective.github.com`: http://github.com/collective

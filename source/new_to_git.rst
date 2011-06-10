@@ -12,7 +12,7 @@ Quick guide
 -----------
 
 When I switched to git I got used to a specific git workflow, inspired
-by my previous experience with subversion. these are just a handful of
+by my previous experience with subversion. These are just a handful of
 commands and a tiny bit of git's full capabilities but it may be useful
 for you as well. (by `Johannes Raggam`_)
 
@@ -27,7 +27,7 @@ Essential
     $ git config --global user.name "USERS NAME"
     $ git config --global user.email USERS@EMAIL
 
-Create global gitignore
+Create global ``gitignore``
 
 .. code-block:: console
 
@@ -64,7 +64,7 @@ These settings will let you push with just "git push" as command
     $ git config branch.master.merge refs/heads/master
     $ git config branch.master.remote origin
 
-Create local gitignore
+Create local ``gitignore``
 
 .. code-block:: console
 
