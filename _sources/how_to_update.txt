@@ -13,16 +13,15 @@ reStructeredText.
 
 2. Run buildout
 
-Source is located in ``source`` directory. Please be careful that you don't
-mix it up with ``sources`` folder.
+Source is located in ``src`` directory.
 
 .. code-block:: console
 
-    $ cd source
-    source/ $ virtualenv --no-site-packages .
-    source/ $ . bin/activate
-    source/ $ python bootstrap.py
-    source/ $ bin/buildout
+    $ cd src
+    src/ $ virtualenv --no-site-packages .
+    src/ $ source bin/activate
+    src/ $ pip install Sphinx
+    src/ $ source bin/activate
 
 This will install all needed. Now its time for you to edit ``.rst`` files.
 
@@ -36,7 +35,7 @@ package.
 
 .. code-block:: console
 
-    source/ $ make html
+    src/ $ make html
 
 4. Commit changes
 
@@ -45,8 +44,8 @@ changes to compiled site.
 
 .. code-block:: console
 
-    source/ $ git commit -a -m "Some very important changes"
-    source/ $ cd ..
+    src/ $ git commit -a -m "Some very important changes"
+    src/ $ cd ..
     $ git commit -a -m "Upload up html"
 
 5. Don't forget to push

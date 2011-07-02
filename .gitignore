@@ -5,12 +5,7 @@
 
 .buildinfo
 bin/
-doctrees/
-include/
-lib/
-_src/.installed.cfg
-_src/.mr.developer.cfg
-_src/bin/
-_src/include/
-_src/lib/
-_src/develop-eggs/
+_doctrees/
+src/bin/
+src/include/
+src/lib/
