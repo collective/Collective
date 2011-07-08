@@ -6,13 +6,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>github/collective - experimental (repeat: experimental) &mdash; collective.github.com - Last updated: Jul 02, 2011</title>
+    <title>Introduction &mdash; collective.github.com - Last updated: Jul 08, 2011</title>
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     'Last updated: Jul 02, 2011',
+        VERSION:     'Last updated: Jul 08, 2011',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -22,12 +22,11 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within collective.github.com - Last updated: Jul 02, 2011"
+          title="Search within collective.github.com - Last updated: Jul 08, 2011"
           href="_static/opensearch.xml"/>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="author" title="About these documents" href="about.html" />
-    <link rel="top" title="collective.github.com - Last updated: Jul 02, 2011" href="#" />
-    <link rel="next" title="Projects and their description" href="projects.html" />
+    <link rel="top" title="collective.github.com - Last updated: Jul 08, 2011" href="#" />
+    <link rel="next" title="How to use Transifex" href="how_to_transifex.html" />
     <script src="_static/jquery.min.js" type="text/javascript"></script>
     <script src="_static/jquery.zrssfeed.min.js" type="text/javascript"></script>
 
@@ -40,9 +39,9 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="projects.html" title="Projects and their description"
+          <a href="how_to_transifex.html" title="How to use Transifex"
              accesskey="N">next</a> |</li>
-        <li><a href="#">collective.github.com - Last updated: Jul 02, 2011</a> &raquo;</li> 
+        <li><a href="#">collective.github.com - Last updated: Jul 08, 2011</a> &raquo;</li> 
       </ul>
     </div>
 
@@ -67,12 +66,10 @@
 <script type="text/javascript">$('#searchbox').show(0);</script>
 <h3><a href="#">Table Of Contents</a></h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="projects.html">Projects and their description</a></li>
-<li class="toctree-l1"><a class="reference internal" href="new_to_git.html">New to git?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="about.html">Who this evaluation is for?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="how_to_update.html">How to update this page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="how_to_transifex.html">How to use Transifex</a></li>
 <li class="toctree-l1"><a class="reference internal" href="how_to_followcommits.html">How to follow commits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_update_this_documentation.html">How to update this page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="new_to_git.html">New to git?</a></li>
 </ul>
 
         </div>
@@ -91,56 +88,76 @@ $(document).ready(function () {
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="github-collective-experimental-repeat-experimental">
-<h1>github/collective - experimental (repeat: experimental)<a class="headerlink" href="#github-collective-experimental-repeat-experimental" title="Permalink to this headline">¶</a></h1>
-<p>Recently we started an organization on github called &#8220;collective&#8221;. You could
-consider the <a class="reference external" href="http://github.com/collective">github/collective</a> as an evaluation area for possible enhancement of
-current <a class="reference external" href="http://svn.plone.org/svn/collective">svn/collective</a>.</p>
-<div class="admonition important">
-<p class="first admonition-title">Important</p>
-<p class="last">Keep in mind this is experimental, experimental and once again
-experimental.</p>
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://github.com/collective">github/collective</a> started as experiment in october 2010. Many of Plone
+developers joined over the last year, which definetly shows that development
+using git is gaining popularity among Plonistas.</p>
 </div>
-<p>I&#8217;m not sure how best to emphasize this, but this is not officially
-supported or started by the Plone Foundation, but they probably appreciate any
-effort to make development processes easier. We are just bunch of git
-enthusiasts who think service like github could bring some order in the mess
-we have in <a class="reference external" href="http://svn.plone.org/svn/collective">svn/collective</a>. And instead of working in our own github accounts,
-we bring the spirit of Plone collective to github.</p>
 <div class="section" id="rules-on-github-collective">
-<h2>&#8220;Rules&#8221; on github/collective<a class="headerlink" href="#rules-on-github-collective" title="Permalink to this headline">¶</a></h2>
-<p>Nothing really to actually add from what you&#8217;ve been used to from
-<a class="reference external" href="http://svn.plone.org/svn/collective">svn/collective</a>. By default you are added to github/collective &#8216;All&#8217; group.
-You are then able to create new project inside collective organisation. Once you
-create them you set who all has rights to participate in this project. By default
-it will add everybody from &#8216;All&#8217; group to be able to read and write to project.</p>
+<h1>&#8220;Rules&#8221; on github/collective<a class="headerlink" href="#rules-on-github-collective" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Every member gets Github&#8217;s <tt class="docutils literal"><span class="pre">Pull</span> <span class="pre">and</span> <span class="pre">Push</span></tt> permission to all repositories.</li>
+<li>Each repository has owners (team of repository owners) which have
+Administrative rights for it.</li>
+<li>Abuses should be reported as ticket in <a class="reference external" href="https://github.com/collective/collective.github.com">collective.github.com</a> repository.</li>
+</ul>
 </div>
 <div class="section" id="how-to-get-access">
-<h2>How to get access<a class="headerlink" href="#how-to-get-access" title="Permalink to this headline">¶</a></h2>
-<p>For now write to <a class="reference external" href="mailto:collective&#37;&#52;&#48;garbas&#46;si">collective<span>&#64;</span>garbas<span>&#46;</span>si</a> and don&#8217;t forget to tell us your
-<strong>Github username</strong>.</p>
+<h1>How to get access<a class="headerlink" href="#how-to-get-access" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>File a ticket that you want permission here:
+<a class="reference external" href="https://github.com/collective/collective.github.com/issues">https://github.com/collective/collective.github.com/issues</a></li>
+<li>Or fork <a class="reference external" href="https://github.com/collective/collective.github.com">collective.github.com</a> repository, edit <tt class="docutils literal"><span class="pre">permissions.cfg</span></tt> file
+and send us Pull Request.</li>
+</ul>
+</div>
+<div class="section" id="how-to-fork-create-new-repository">
+<h1>How to fork, create new repository<a class="headerlink" href="#how-to-fork-create-new-repository" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p class="first">If you are already an owner of some repository you should have enought rights
+to use Github&#8217;s fork system or be able to create new repository.</p>
+<blockquote>
+<div><p><strong>TODO:</strong> script does not set owner the person who forked project or first
+commiter</p>
+</div></blockquote>
+</li>
+<li><p class="first">If you are not owner of any repository you can create ticket or modify
+<a class="reference external" href="https://github.com/collective/collective.github.com/blob/master/permissions.cfg">permissions.cfg</a> in one of the following ways:</p>
+<blockquote>
+<div><p><strong>to fork repository</strong>:</p>
+<div class="highlight-python"><pre>[repo:vim-snipmate]
+fork = garbas/vim-snipmate
+teams = contributors
+owners = garbas</pre>
+</div>
+<p><strong>to create repository</strong>:</p>
+<div class="highlight-python"><pre>[repo:vim-snipmate]
+teams = contributors
+owners = garbas</pre>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="teams-permissions-and-how-to-manage-them">
+<h1>Teams, permissions and how to manage them<a class="headerlink" href="#teams-permissions-and-how-to-manage-them" title="Permalink to this headline">¶</a></h1>
+<p>Permissions are stored in <a class="reference external" href="https://github.com/collective/collective.github.com/blob/master/permissions.cfg">permissions.cfg</a> file in <a class="reference external" href="https://github.com/collective/collective.github.com">collective.github.com</a>
+repository. We might change this in the future to read from plone.org&#8217;s LDAP,
+but for now this is the place.</p>
+<p>We scheduled a script that runs every 10min and checks for differences and
+updates them. More about script you can read here:</p>
+<p>Inside <a class="reference external" href="https://github.com/collective/collective.github.com/blob/master/permissions.cfg">permissions.cfg</a> file you have a list of teams and repositories.
+Team
+are sections starting with <tt class="docutils literal"><span class="pre">team:</span></tt> and repository is a section
+starting with <tt class="docutils literal"><span class="pre">repo:</span></tt>.</p>
+<blockquote>
+<div><strong>TODO:</strong> finish and move this section to separate document</div></blockquote>
 </div>
 <div class="section" id="more-information">
-<h2>More information<a class="headerlink" href="#more-information" title="Permalink to this headline">¶</a></h2>
+<h1>More information<a class="headerlink" href="#more-information" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="projects.html">Projects and their description</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="projects.html#jquery-recurrenceinput-js"><tt class="docutils literal"><span class="pre">jquery.recurrenceinput.js</span></tt></a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="new_to_git.html">New to git?</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="new_to_git.html#useful-links">Useful links</a></li>
-<li class="toctree-l2"><a class="reference internal" href="new_to_git.html#quick-guide">Quick guide</a></li>
-<li class="toctree-l2"><a class="reference internal" href="new_to_git.html#some-more-useful-resources">Some more useful resources</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="about.html">Who this evaluation is for?</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="about.html#why-we-didn-t-ask-wider-plone-community-and-raise-debate-on-mailing-list-first">Why we didn&#8217;t ask wider Plone Community and raise debate on mailing list first?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="about.html#but-i-don-t-like-git-i-think-x-place-your-favorite-vcs-here-is-better-and-easier-to-learn">But I don&#8217;t like git, I think X (place your favorite VCS here) is better and easier to learn?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="about.html#and-after-evaluation-period">And after evaluation period?</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="how_to_update.html">How to update this page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="how_to_transifex.html">How to use Transifex</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="how_to_transifex.html#what-is-transifex">What is Transifex</a></li>
 <li class="toctree-l2"><a class="reference internal" href="how_to_transifex.html#why-should-i-use-transifex">Why should I use Transifex</a></li>
@@ -149,8 +166,14 @@ it will add everybody from &#8216;All&#8217; group to be able to read and write 
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="how_to_followcommits.html">How to follow commits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_update_this_documentation.html">How to update this page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="new_to_git.html">New to git?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="new_to_git.html#useful-links">Useful links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="new_to_git.html#quick-guide">Quick guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="new_to_git.html#some-more-useful-resources">Some more useful resources</a></li>
 </ul>
-</div>
+</li>
+</ul>
 </div>
 </div>
 
@@ -168,14 +191,14 @@ it will add everybody from &#8216;All&#8217; group to be able to read and write 
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="projects.html" title="Projects and their description"
+          <a href="how_to_transifex.html" title="How to use Transifex"
              >next</a> |</li>
-        <li><a href="#">collective.github.com - Last updated: Jul 02, 2011</a> &raquo;</li> 
+        <li><a href="#">collective.github.com - Last updated: Jul 08, 2011</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2010, Rok Garbas &lt;rok@garbas.si&gt;.
-      Last updated on Jul 02, 2011.
+      Last updated on Jul 08, 2011.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
     </div>
   </body>
