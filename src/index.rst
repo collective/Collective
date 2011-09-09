@@ -28,6 +28,9 @@ How to get access
 How to manage permissions and repositories
 ==========================================
 
+Overview
+--------
+
 Permissions are stored in `permissions.cfg`_ file in `collective.github.com`_
 repository (We might change this in the future to read from plone.org's LDAP,
 but for now this is the place).
@@ -43,11 +46,12 @@ Inside `permissions.cfg`_ file you have a list of teams and repositories.
 Team are sections starting with ``team:`` and repository is a section
 starting with ``repo:``.
 
-**Instructions on editing permissions.cfg:**
+Instructions on editing permissions.cfg
+---------------------------------------
 
 Existing repository, but now owner any more
-  You created a repository in past and now youre not owner anymore? Add 
-  yourself to the ``owners =`` of the existing repository section.
+    You created a repository in past and now youre not owner anymore? Add 
+    yourself to the ``owners =`` of the existing repository section.
 
 Fork an existing repository from another github user or organiszation
     Add a new section::
