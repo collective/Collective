@@ -20,52 +20,63 @@ How to get access
 
 - File a ticket that you want permission here:
   https://github.com/collective/collective.github.com/issues
-- Or fork `collective.github.com`_ repository, edit ``permissions.cfg`` file
-  and send us Pull Request.
+
+- Or fork `collective.github.com`_ repository, edit ``permissions.cfg`` file, 
+  commit and push it and send us a Pull Request (see section below for details).
 
 
-How to fork, create new repository
-==================================
+How to manage permissions and repositories
+==========================================
 
-- If you are already an owner of some repository you should have enought rights
-  to use Github's fork system or be able to create new repository.
-  
-    **TODO:** script does not set owner the person who forked project or first
-    commiter
-
-- If you are not owner of any repository you can create ticket or modify
-  `permissions.cfg`_ in one of the following ways:
-
-    **to fork repository**::
-
-        [repo:vim-snipmate]
-        fork = garbas/vim-snipmate
-        teams = contributors
-        owners = garbas
-
-    **to create repository**::
-
-        [repo:vim-snipmate]
-        teams = contributors
-        owners = garbas
-
-
-Teams, permissions and how to manage them
-=========================================
+Overview
+--------
 
 Permissions are stored in `permissions.cfg`_ file in `collective.github.com`_
-repository. We might change this in the future to read from plone.org's LDAP,
-but for now this is the place.
+repository (We might change this in the future to read from plone.org's LDAP,
+but for now this is the place).
+
+Fork the `collective.github.com <https://github.com/collective/collective.github.com>`_
+repository and then edit the `permissions.cfg`_. If youre done commit, push 
+and create a pull request. 
 
 We scheduled a script that runs every 10min and checks for differences and
-updates them. More about script you can read here: 
+updates them. 
 
 Inside `permissions.cfg`_ file you have a list of teams and repositories.
-Team
-are sections starting with ``team:`` and repository is a section
+Team are sections starting with ``team:`` and repository is a section
 starting with ``repo:``.
 
-    **TODO:** finish and move this section to separate document
+Instructions on editing permissions.cfg
+---------------------------------------
+
+Existing repository, but now owner any more
+    You created a repository in past and now youre not owner anymore? Add 
+    yourself to the ``owners =`` of the existing repository section.
+
+Fork an existing repository from another github user or organiszation
+    Add a new section::
+
+        [repo:REPOSITORYNAME]
+        fork = FROM_USERNAME_OR_ORGANISATIONNAME/REPOSITORYNAME
+        teams = contributors
+        owners = MY_USERNAME
+
+Create a new repository
+    Add a new section::
+
+        [repo:NEW_REPOSITORY_NAME]
+        teams = contributors
+        owners = MY_USERNAME
+
+Add yourself to the ``contributors`` (or any other team)
+   Find the section ``[team:contributors]`` and append your username to the end.
+
+**Please not use the button on github website to create new repositories, 
+otherwise the admin team has to edit the permissions.cfg file manually because 
+of your lazyness**
+
+**TODO:** script does not set owner the person who forked project or first
+committer
 
 
 More information
