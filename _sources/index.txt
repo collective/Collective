@@ -1,9 +1,9 @@
 Introduction
 ============
 
-`github/collective`_ started as experiment in october 2010. Many of Plone
-developers joined over the last year, which definetly shows that development
-using git is gaining popularity among Plonistas.
+`github/collective`_ started as experiment in october 2010. Many of 
+`Plone <http://plone.org>`_ developers joined over the last year, which 
+definetly shows that development using git is gaining popularity among Plonistas.
 
 
 "Rules" on github/collective
