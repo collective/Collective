@@ -49,11 +49,11 @@ starting with ``repo:``.
 Instructions on editing permissions.cfg
 ---------------------------------------
 
-Existing repository, but now owner any more
+Existing repository, but not owner any more
     You created a repository in past and now youre not owner anymore? Add 
     yourself to the ``owners =`` of the existing repository section.
 
-Fork an existing repository from another github user or organiszation
+Fork an existing repository from another github user or organization
     Add a new section::
 
         [repo:REPOSITORYNAME]
