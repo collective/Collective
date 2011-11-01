@@ -6,13 +6,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Projects and their description &mdash; collective.github.com - Last updated: Jul 08, 2011</title>
+    <title>How to merge pull requests (Admin documentation) &mdash; collective.github.com - Last updated: Nov 01, 2011</title>
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     'Last updated: Jul 08, 2011',
+        VERSION:     'Last updated: Nov 01, 2011',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -22,11 +22,11 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within collective.github.com - Last updated: Jul 08, 2011"
+          title="Search within collective.github.com - Last updated: Nov 01, 2011"
           href="_static/opensearch.xml"/>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="author" title="About these documents" href="about.html" />
-    <link rel="top" title="collective.github.com - Last updated: Jul 08, 2011" href="index.html" />
+    <link rel="top" title="collective.github.com - Last updated: Nov 01, 2011" href="index.html" />
+    <link rel="prev" title="New to git?" href="new_to_git.html" />
     <script src="_static/jquery.min.js" type="text/javascript"></script>
     <script src="_static/jquery.zrssfeed.min.js" type="text/javascript"></script>
 
@@ -38,7 +38,10 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="index.html">collective.github.com - Last updated: Jul 08, 2011</a> &raquo;</li> 
+        <li class="right" >
+          <a href="new_to_git.html" title="New to git?"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">collective.github.com - Last updated: Nov 01, 2011</a> &raquo;</li> 
       </ul>
     </div>
 
@@ -51,7 +54,7 @@
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" size="18" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -62,10 +65,12 @@
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
 <h3><a href="index.html">Table Of Contents</a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="new_to_git.html">New to git?</a></li>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="how_to_transifex.html">How to use Transifex</a></li>
 <li class="toctree-l1"><a class="reference internal" href="how_to_followcommits.html">How to follow commits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_update_this_documentation.html">How to update this page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="new_to_git.html">New to git?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">How to merge pull requests (Admin documentation)</a></li>
 </ul>
 
         </div>
@@ -84,20 +89,39 @@ $(document).ready(function () {
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="projects-and-their-description">
-<h1>Projects and their description<a class="headerlink" href="#projects-and-their-description" title="Permalink to this headline">¶</a></h1>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">For know we list our project with their description here. Probably later
-we will split this document into more documents.</p>
+  <div class="section" id="how-to-merge-pull-requests-admin-documentation">
+<h1>How to merge pull requests (Admin documentation)<a class="headerlink" href="#how-to-merge-pull-requests-admin-documentation" title="Permalink to this headline">¶</a></h1>
+<p>This documentation is meant for github.com/collective admins.</p>
+<p>Merging pull requests via the github.com web interface is very convenient, but
+sometimes merge conflicts cannot be resolved automatically. Then you have to do
+it manually, like so:</p>
+<p>1. Clone github.com/collective, if not done already (or be sure to operate on
+the master branch):</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git clone git@github.com:collective/collective.github.com.git
+</pre></div>
 </div>
-<div class="section" id="jquery-recurrenceinput-js">
-<h2><tt class="docutils literal"><span class="pre">jquery.recurrenceinput.js</span></tt><a class="headerlink" href="#jquery-recurrenceinput-js" title="Permalink to this headline">¶</a></h2>
+<p>2. Add the remote repository from which the pull request comes from and fetch
+it:</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git remote add thet git://github.com/thet/collective.github.com.git
+<span class="gp">$</span> git fetch thet
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li>Merge it and resolve the merge conflicts manually:</li>
+</ol>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git merge thet/master
+<span class="gp">$</span> vim permissions.cfg
+</pre></div>
+</div>
+<ol class="arabic" start="4">
+<li><p class="first">Commit and push it back.</p>
 <blockquote>
-<div>As part of <a class="reference external" href="http://dev.plone.org/plone/ticket/10886">PLIP 10886</a> this widget was created. It pure jquery widget
-that depends on <a class="reference external" href="https://github.com/jquerytools/jquerytools/blob/master/src/dateinput/dateinput.js">jquery.tools.dateinput</a>, <a class="reference external" href="https://github.com/jquerytools/jquerytools/blob/master/src/overlay/overlay.js">jquery.tools.overlay</a> and
-<a class="reference external" href="https://github.com/jquery/jquery-tmpl">jquery.tmpl</a>.</div></blockquote>
-</div>
+<div><p>$ git commit permissions.cfg -m&#8221;merge with thet/master&#8221;
+$ git push</p>
+</div></blockquote>
+</li>
+</ol>
+<p>For more Information see the <a class="reference external" href="http://help.github.com/send-pull-requests">Github help page</a> on this topic.</p>
 </div>
 
 
@@ -113,13 +137,16 @@ that depends on <a class="reference external" href="https://github.com/jquerytoo
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="index.html">collective.github.com - Last updated: Jul 08, 2011</a> &raquo;</li> 
+        <li class="right" >
+          <a href="new_to_git.html" title="New to git?"
+             >previous</a> |</li>
+        <li><a href="index.html">collective.github.com - Last updated: Nov 01, 2011</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2010, Rok Garbas &lt;rok@garbas.si&gt;.
-      Last updated on Jul 08, 2011.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+      Last updated on Nov 01, 2011.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.8.
     </div>
   </body>
 </html>
