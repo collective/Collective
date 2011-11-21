@@ -1,10 +1,16 @@
 Introduction
 ============
 
-`github/collective`_ started as experiment in october 2010. Many of 
+`github/collective`_ started as experiment in October 2010. Many of 
 `Plone <http://plone.org>`_ developers joined over the last year, which 
-definetly shows that development using git is gaining popularity among Plonistas.
+definitely shows that development using git is gaining popularity among Plonistas.
 
+The sync from the Plone subversion repository was done using the scripts
+from https://github.com/plone/svn-migrate 
+
+After the initial sync, ongoing syncing is not possible. Either you move
+your stuff to github or you leave it on svn/collective (or you move it to
+any other location, such as bitbucket).
 
 "Rules" on github/collective
 ============================
@@ -36,7 +42,7 @@ repository (We might change this in the future to read from plone.org's LDAP,
 but for now this is the place).
 
 Fork the `collective.github.com <https://github.com/collective/collective.github.com>`_
-repository and then edit the `permissions.cfg`_. If youre done commit, push 
+repository and then edit the `permissions.cfg`_. If you're done commit, push 
 and create a pull request. 
 
 We scheduled a script that runs every 10min and checks for differences and
@@ -73,7 +79,7 @@ Add yourself to the ``contributors`` (or any other team)
 
 **Please not use the button on github website to create new repositories, 
 otherwise the admin team has to edit the permissions.cfg file manually because 
-of your lazyness**
+of your laziness**
 
 **TODO:** script does not set owner the person who forked project or first
 committer
