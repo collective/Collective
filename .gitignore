@@ -9,3 +9,5 @@ _doctrees/
 src/bin/
 src/include/
 src/lib/
+include/
+lib/
