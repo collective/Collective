@@ -91,7 +91,6 @@ More information
 .. toctree::
     :maxdepth: 2
     
-    how_to_transifex
     how_to_followcommits
     how_to_update_this_documentation
     new_to_git
