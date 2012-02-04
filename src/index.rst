@@ -1,12 +1,15 @@
 Introduction
 ============
 
-`github/collective`_ started as experiment in October 2010. Many of 
-`Plone <http://plone.org>`_ developers joined over the last year, which 
-definitely shows that development using git is gaining popularity among Plonistas.
+`github/collective`_ started as an experiment in October 2010. Many
+`Plone <http://plone.org>`_ developers have joined over the last year, which 
+definitely shows that development using git is gaining popularity amongst Plonistas.
+
+Migration
+=========
 
 The sync from the Plone subversion repository was done using the scripts
-from https://github.com/plone/svn-migrate 
+from here: https://github.com/plone/svn-migrate.
 
 After the initial sync, ongoing syncing is not possible. Either you move
 your stuff to github or you leave it on svn/collective (or you move it to
@@ -17,9 +20,8 @@ any other location, such as bitbucket).
 
 - Every member gets Github's ``Pull and Push`` permission to all repositories.
 - Each repository has owners (team of repository owners) which have
-  Administrative rights for it.
-- Abuses should be reported as ticket in `collective.github.com`_ repository.
-
+  Administrative rights to it.
+- Abuse should be reported by opening a ticket in the `collective.github.com`_ repository.
 
 How to get access
 =================
@@ -29,7 +31,6 @@ How to get access
 
 - Or fork `collective.github.com`_ repository, edit ``permissions.cfg`` file, 
   commit and push it and send us a Pull Request (see section below for details).
-
 
 How to manage permissions and repositories
 ==========================================
@@ -83,7 +84,6 @@ of your laziness**
 
 **TODO:** script does not set owner the person who forked project or first
 committer
-
 
 More information
 ================
