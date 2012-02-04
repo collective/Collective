@@ -2,7 +2,7 @@ Introduction
 ============
 
 `github/collective`_ started as an experiment in October 2010. Many
-`Plone <http://plone.org>`_ developers have joined over the last year, which 
+`Plone <http://plone.org>`_ developers have joined since then, which 
 definitely shows that development using git is gaining popularity amongst Plonistas.
 
 Migration
