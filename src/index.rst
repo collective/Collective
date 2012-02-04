@@ -9,7 +9,7 @@ Migration
 =========
 
 The sync from the Plone subversion repository was done using the scripts
-from here: https://github.com/plone/svn-migrate.
+located here: https://github.com/plone/svn-migrate.
 
 After the initial sync, ongoing syncing is not possible. Either you move
 your stuff to github or you leave it on svn/collective (or you move it to
