@@ -8,10 +8,10 @@ COMMENT = """\
 # collective repositories \/
 #
 # -> below here add new repositories.
-# -> place in alphabetical order.
+# -> place in ALPHABETICAL ORDER.
 # -> existing repositories may not have the right owner. This happened at
-#    import time and set garbas as owner. If you are the owner of such a 
-#    repository, just place your name there. 
+#    import time and set garbas as owner. If you are the owner of such a
+#    repository, just place your name there.
 
 """
 
