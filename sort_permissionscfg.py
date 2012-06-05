@@ -14,6 +14,12 @@ COMMENT = """\
 #    repository, just place your name there.
 
 """
+FOOTER = """\
+#
+# DO NOT JUST APPEND NEW REPOSITORIES, PUT 'EM IN ALPHABETICAL ORDER
+# thanks, this avoids merge conflicts and saves administration time.
+#
+"""
 
 def write(self, fp):
     """Write an .ini-format representation of the configuration state."""
@@ -52,4 +58,4 @@ for key, value in sorted(config._sections.iteritems(),
 
 with open('permissions.cfg', 'w') as pcfg:
     write(newconfig, pcfg)
-
+    pcfg.write(FOOTER)
