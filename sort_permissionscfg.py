@@ -31,6 +31,7 @@ def write(self, fp):
                 continue
             if (value is not None) or (self._optcre == self.OPTCRE):
                 key = " = ".join((key, str(value).replace('\n', '\n    ')))
+            key = key.replace('= \n', '=\n')
             fp.write("%s\n" % (key))
         fp.write("\n")
         if section == GITHUBSECTION:
