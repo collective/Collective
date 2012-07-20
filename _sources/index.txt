@@ -5,32 +5,25 @@ Introduction
 `Plone <http://plone.org>`_ developers have joined since then, which 
 definitely shows that development using git is gaining popularity amongst Plonistas.
 
-Migration
-=========
-
-The sync from the Plone subversion repository was done using the scripts
-located here: https://github.com/plone/svn-migrate.
-
-After the initial sync, ongoing syncing is not possible. Either you move
-your stuff to github or you leave it on svn/collective (or you move it to
-any other location, such as bitbucket).
-
 "Rules" on github/collective
 ============================
 
 - Every member gets Github's ``Pull and Push`` permission to all repositories.
+
 - Each repository has owners (team of repository owners) which have
   Administrative rights to it.
+
 - Abuse should be reported by opening a ticket in the `collective.github.com`_ repository.
 
 How to get access
 =================
 
+- Fork `collective.github.com`_ repository, edit ``permissions.cfg`` file, 
+  commit and push it and send us a Pull Request (see section below for details).
+
 - File a ticket that you want permission here:
   https://github.com/collective/collective.github.com/issues
-
-- Or fork `collective.github.com`_ repository, edit ``permissions.cfg`` file, 
-  commit and push it and send us a Pull Request (see section below for details).
+  (may take longer to process than forking, because a human needs to work more here)
 
 How to manage permissions and repositories
 ==========================================
@@ -91,7 +84,7 @@ Not owner anymore?
 committer
 
 How to migrate a repository from svn.plone.org
-----------------------------------------------
+==============================================
 
 Code in the `Plone Collective Subversion <http://svn.plone.org/svn/collective>`_
 or in the `Plone Archetypes Subversion <http://svn.plone.org/svn/archetypes>`_
