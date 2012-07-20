@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Introduction &mdash; collective.github.com - Last updated: Apr 12, 2012</title>
+    <title>Introduction &mdash; collective.github.com - Last updated: Jul 20, 2012</title>
     
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -15,7 +15,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     'Last updated: Apr 12, 2012',
+        VERSION:     'Last updated: Jul 20, 2012',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -25,10 +25,10 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within collective.github.com - Last updated: Apr 12, 2012"
+          title="Search within collective.github.com - Last updated: Jul 20, 2012"
           href="_static/opensearch.xml"/>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="top" title="collective.github.com - Last updated: Apr 12, 2012" href="#" />
+    <link rel="top" title="collective.github.com - Last updated: Jul 20, 2012" href="#" />
     <link rel="next" title="How to follow commits" href="how_to_followcommits.html" />
     <script src="_static/jquery.min.js" type="text/javascript"></script>
     <script src="_static/jquery.zrssfeed.min.js" type="text/javascript"></script>
@@ -44,7 +44,7 @@
         <li class="right" >
           <a href="how_to_followcommits.html" title="How to follow commits"
              accesskey="N">next</a> |</li>
-        <li><a href="#">collective.github.com - Last updated: Apr 12, 2012</a> &raquo;</li> 
+        <li><a href="#">collective.github.com - Last updated: Jul 20, 2012</a> &raquo;</li> 
       </ul>
     </div>
 
@@ -125,14 +125,16 @@ commit and push it and send us a Pull Request (see section below for details).</
 </div>
 <div class="section" id="how-to-manage-permissions-and-repositories">
 <h1>How to manage permissions and repositories<a class="headerlink" href="#how-to-manage-permissions-and-repositories" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="process-overview">
+<h2>Process Overview<a class="headerlink" href="#process-overview" title="Permalink to this headline">¶</a></h2>
 <p>Permissions are stored in <a class="reference external" href="https://github.com/collective/collective.github.com/blob/master/permissions.cfg">permissions.cfg</a> file in <a class="reference external" href="https://github.com/collective/collective.github.com">collective.github.com</a>
-repository (We might change this in the future to read from plone.org&#8217;s LDAP,
-but for now this is the place).</p>
-<p>Fork the <a class="reference external" href="https://github.com/collective/collective.github.com">collective.github.com</a>
-repository and then edit the <a class="reference external" href="https://github.com/collective/collective.github.com/blob/master/permissions.cfg">permissions.cfg</a>. If you&#8217;re done commit, push
-and create a pull request.</p>
+repository.</p>
+<ol class="arabic simple">
+<li><strong>Fork</strong> the <a class="reference external" href="https://github.com/collective/collective.github.com">collective.github.com</a>
+repository to your account and then</li>
+<li><strong>edit</strong> the <a class="reference external" href="https://github.com/collective/collective.github.com/blob/master/permissions.cfg">permissions.cfg</a>. If you&#8217;re done</li>
+<li><strong>commit, push</strong> and create a <strong>pull request</strong>.</li>
+</ol>
 <p>We scheduled a script that runs every 10min and checks for differences and
 updates them.</p>
 <p>Inside <a class="reference external" href="https://github.com/collective/collective.github.com/blob/master/permissions.cfg">permissions.cfg</a> file you have a list of teams and repositories.
@@ -142,32 +144,65 @@ starting with <tt class="docutils literal"><span class="pre">repo:</span></tt>.<
 <div class="section" id="instructions-on-editing-permissions-cfg">
 <h2>Instructions on editing permissions.cfg<a class="headerlink" href="#instructions-on-editing-permissions-cfg" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
-<dt>Existing repository, but not owner any more</dt>
-<dd>You created a repository in past and now youre not owner anymore? Add
-yourself to the <tt class="docutils literal"><span class="pre">owners</span> <span class="pre">=</span></tt> of the existing repository section.</dd>
-<dt>Fork an existing repository from another github user or organization</dt>
-<dd><p class="first">Add a new section:</p>
+<dt>Push access</dt>
+<dd><p class="first">Add yourself to the <tt class="docutils literal"><span class="pre">contributors</span></tt> (or any other team)
+Find the section <tt class="docutils literal"><span class="pre">[team:contributors]</span></tt> and insert your github username in
+alphabetical order.</p>
+<p class="last"><strong>Please not use the button on github website to create new repositories,
+otherwise the admin team has to edit the permissions.cfg file manually because
+of your laziness</strong></p>
+</dd>
+<dt>Create a new repository</dt>
+<dd><p class="first">Add a new section in alphabetical order:</p>
+<div class="last highlight-python"><pre>[repo:NEW_REPOSITORY_NAME]
+teams = contributors
+owners = MY_USERNAME</pre>
+</div>
+</dd>
+<dt>Fork an existing repository</dt>
+<dd><p class="first">In order to fork from another github user or organization add a new section:</p>
 <div class="last highlight-python"><pre>[repo:REPOSITORYNAME]
 fork = FROM_USERNAME_OR_ORGANISATIONNAME/REPOSITORYNAME
 teams = contributors
 owners = MY_USERNAME</pre>
 </div>
 </dd>
-<dt>Create a new repository</dt>
-<dd><p class="first">Add a new section:</p>
-<div class="last highlight-python"><pre>[repo:NEW_REPOSITORY_NAME]
-teams = contributors
-owners = MY_USERNAME</pre>
-</div>
-</dd>
-<dt>Add yourself to the <tt class="docutils literal"><span class="pre">contributors</span></tt> (or any other team)</dt>
-<dd>Find the section <tt class="docutils literal"><span class="pre">[team:contributors]</span></tt> and append your username to the end.</dd>
+<dt>Not owner anymore?</dt>
+<dd>You created a repository in past and now you are not owner anymore? Add
+yourself to the <tt class="docutils literal"><span class="pre">owners</span> <span class="pre">=</span></tt> of the existing repository section.</dd>
 </dl>
-<p><strong>Please not use the button on github website to create new repositories,
-otherwise the admin team has to edit the permissions.cfg file manually because
-of your laziness</strong></p>
 <p><strong>TODO:</strong> script does not set owner the person who forked project or first
 committer</p>
+</div>
+<div class="section" id="how-to-migrate-a-repository-from-svn-plone-org">
+<h2>How to migrate a repository from svn.plone.org<a class="headerlink" href="#how-to-migrate-a-repository-from-svn-plone-org" title="Permalink to this headline">¶</a></h2>
+<p>Code in the <a class="reference external" href="http://svn.plone.org/svn/collective">Plone Collective Subversion</a>
+or in the <a class="reference external" href="http://svn.plone.org/svn/archetypes">Plone Archetypes Subversion</a>
+should be migrated to the Github collective if it is still used and development
+happens.</p>
+<p>If youre not the maintainer of the repository contact the current maintainer before.
+If unsure ask at the plone-product-developers mailing-list.</p>
+<p>Follow the steps below for migration.</p>
+<ol class="arabic simple">
+<li>Add the project as a new repository to github collective <a class="reference external" href="#instructions-on-editing-permissions-cfg">as you would do for a
+new one</a>. Once the pull-request was
+accepted and the repository created go on with step two.</li>
+<li>On your machine use <a class="reference external" href="https://help.github.com/articles/importing-from-subversion">svn2git to migrate on your local machine</a>
+(follow also the links in there). Unfortunately Plone Administrators can not provide
+an authors file (mapping from user-names to e-mail addresses) for privacy reasons.</li>
+<li>rename the trunk of the existing repository to OLD-trunk and place a
+MOVED-TO-GITHUB.txt at top level of the project in svn. Add a line with the url
+to the repository to the file.</li>
+<li>Some housekeeping<ul>
+<li>Rename <tt class="docutils literal"><span class="pre">README.txt</span></tt> to <tt class="docutils literal"><span class="pre">README.rst</span></tt>, update <tt class="docutils literal"><span class="pre">setup.py</span></tt> to reflect this change,</li>
+<li>Update links in <tt class="docutils literal"><span class="pre">README.rst</span></tt> to point to Github project</li>
+<li>Update links on <a class="reference external" href="http://plone.org/products">plone.org product page</a> to point to Github repository</li>
+<li>optional: send a mail to the plone-product-developers mailing-list and
+additional/optional tweet about it, write a line at IRC, if worth write a
+blog post, ... to notify the community about it.</li>
+</ul>
+</li>
+</ol>
 </div>
 </div>
 <div class="section" id="more-information">
@@ -203,12 +238,12 @@ committer</p>
         <li class="right" >
           <a href="how_to_followcommits.html" title="How to follow commits"
              >next</a> |</li>
-        <li><a href="#">collective.github.com - Last updated: Apr 12, 2012</a> &raquo;</li> 
+        <li><a href="#">collective.github.com - Last updated: Jul 20, 2012</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2010, Rok Garbas &lt;rok@garbas.si&gt;.
-      Last updated on Apr 12, 2012.
+      Last updated on Jul 20, 2012.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
