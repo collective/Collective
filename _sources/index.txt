@@ -85,6 +85,45 @@ of your laziness**
 **TODO:** script does not set owner the person who forked project or first
 committer
 
+How to migrate a repository from svn.plone.org
+----------------------------------------------
+
+Code in the `Plone Collective Subversion <http://svn.plone.org/svn/collective>`_ 
+or in the `Plone Archetypes Subversion <http://svn.plone.org/svn/archetypes>`_ 
+should be migrated to the Github collective if it is still used and development 
+happens.
+
+If youre not the maintainer of the repository contact the current maintainer before. 
+If unsure ask at the plone-product-developers mailing-list. 
+
+Follow the steps below for migration. 
+
+1) Add the project as a new repository to github collective `as you would do for a 
+new one <#instructions-on-editing-permissions-cfg>`_. Once the pull-request was 
+accepted and the repository created go on with step two.
+
+2) On your machine use `svn2git to migrate on your local machine 
+<https://help.github.com/articles/importing-from-subversion>`_ 
+(follow also the links in there). Unfortunately Plone Administrators can not provide 
+an authors file (mapping from user-names to e-mail addresses) for privacy reasons.
+
+3) rename the trunk of the existing repository to OLD-trunk and place a 
+MOVED-TO-GITHUB.txt at top level of the project in svn. Add a line with the url 
+to the repository to the file.
+
+4) Do some housekeeping:
+
+ - Rename README.txt to README.rst, update setup.py to reflect this change
+
+ - Update links in README.rst to point to Github project
+
+ - Update links on plone.org product page to point to Github repository
+
+ - optional: send a mail to the plone-product-developers mailing-list and 
+   additional/optional tweet about it, write a line at IRC, if worth write a 
+   blog post, ... to notify the community about it.
+
+
 More information
 ================
 
