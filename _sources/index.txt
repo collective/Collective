@@ -107,7 +107,11 @@ Follow the steps below for migration.
 
 3. rename the trunk of the existing repository to OLD-trunk and place a
    MOVED-TO-GITHUB.txt at top level of the project in svn. Add a line with the url
-   to the repository to the file.
+   to the repository to the file. If you do not want to checkout the
+   complete subversion with all the tags and branches, you can create
+   this file and then use the svn import command::
+
+     svn import MOVED-TO-GITHUB.txt https://svn.plone.org/svn/collective/your.package/MOVED-TO-GITHUB.txt
 
 4. Some housekeeping
 
