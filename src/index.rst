@@ -43,21 +43,21 @@ repository (We might change this in the future to read from plone.org's LDAP,
 but for now this is the place).
 
 Fork the `collective.github.com <https://github.com/collective/collective.github.com>`_
-repository and then edit the `permissions.cfg`_. If you're done commit, push 
-and create a pull request. 
+repository and then edit the `permissions.cfg`_. 
+When you're done, commit, push, and create a pull request. 
 
 We scheduled a script that runs every 10min and checks for differences and
 updates them. 
 
 Inside `permissions.cfg`_ file you have a list of teams and repositories.
-Team are sections starting with ``team:`` and repository is a section
+Team are sections starting with ``team:`` and repositories are sections
 starting with ``repo:``.
 
 Instructions on editing permissions.cfg
 ---------------------------------------
 
 Existing repository, but not owner any more
-    You created a repository in past and now youre not owner anymore? Add 
+    You created a repository in past and now you're not owner anymore? Add 
     yourself to the ``owners =`` of the existing repository section.
 
 Fork an existing repository from another github user or organization
