@@ -91,7 +91,7 @@ or in the `Plone Archetypes Subversion <http://svn.plone.org/svn/archetypes>`_
 should be migrated to the Github collective if it is still used and development
 happens.
 
-If youre not the maintainer of the repository contact the current maintainer before.
+If you're not the maintainer of the repository contact the current maintainer before.
 If unsure ask at the plone-product-developers mailing-list.
 
 Follow the steps below for migration.
