@@ -45,7 +45,7 @@ We scheduled a script that runs every 10min and checks for differences and
 updates them. 
 
 Inside `permissions.cfg`_ file you have a list of teams and repositories.
-Team are sections starting with ``team:`` and repository is a section
+Team are sections starting with ``team:`` and repositories are sections
 starting with ``repo:``.
 
 Instructions on editing permissions.cfg
@@ -56,16 +56,16 @@ Push access
   Find the section ``[team:contributors]`` and insert your github username in 
   alphabetical order.
 
-  **Please not use the button on github website to create new repositories, 
-  otherwise the admin team has to edit the permissions.cfg file manually because 
-  of your laziness**
-
 Create a new repository
   Add a new section in alphabetical order::
 
         [repo:NEW_REPOSITORY_NAME]
         teams = contributors
         owners = MY_USERNAME
+
+  **Please not use the button on github website to create new repositories, 
+  otherwise the admin team has to edit the permissions.cfg file manually because 
+  of your laziness**
 
 Fork an existing repository
   In order to fork from another github user or organization add a new section::
@@ -91,7 +91,7 @@ or in the `Plone Archetypes Subversion <http://svn.plone.org/svn/archetypes>`_
 should be migrated to the Github collective if it is still used and development
 happens.
 
-If youre not the maintainer of the repository contact the current maintainer before.
+If you're not the maintainer of the repository contact the current maintainer before.
 If unsure ask at the plone-product-developers mailing-list.
 
 Follow the steps below for migration.
