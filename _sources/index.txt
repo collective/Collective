@@ -117,6 +117,8 @@ Follow the steps below for migration.
 
    - Rename ``README.txt`` to ``README.rst``, update ``setup.py`` to reflect this change,
 
+   - Add a ``MANIFEST.in`` to include the ``*.rst`` files containing at least one line ``include *.rst``,
+
    - Update links in ``README.rst`` to point to Github project
 
    - Update links on `plone.org product page <http://plone.org/products>`_ to point to Github repository
