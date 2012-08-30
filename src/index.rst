@@ -25,6 +25,16 @@ How to get access
   https://github.com/collective/collective.github.com/issues
   (may take longer to process than forking, because a human needs to work more here)
 
+Disabling notification spam
+==============================
+
+By default you are subscribed to all new collective github repository notifications.
+Unless you disable this yourself soon your inbox will contain only Github spam.
+
+* Go to https://github.com/watching
+
+* Uncheck *Automatically watch*
+
 How to manage permissions and repositories
 ==========================================
 
