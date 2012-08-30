@@ -33,7 +33,8 @@ Unless you disable this yourself soon your inbox will contain only Github spam.
 
 * Go to https://github.com/watching
 
-* Uncheck *Automatically watch*
+* Select what to watch or Uncheck *Automatically watch*.  But attention: latter will 
+  disable watch for all organizations.
 
 How to manage permissions and repositories
 ==========================================
