@@ -52,7 +52,7 @@ repository.
 
 3. **commit, push** and create a **pull request**. 
 
-We scheduled a script that runs every 10min and checks for differences and
+We scheduled a script that runs every hour and checks for differences and
 updates them. 
 
 Inside `permissions.cfg`_ file you have a list of teams and repositories.
