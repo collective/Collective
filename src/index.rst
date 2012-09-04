@@ -25,6 +25,17 @@ How to get access
   https://github.com/collective/collective.github.com/issues
   (may take longer to process than forking, because a human needs to work more here)
 
+Disabling notification spam
+==============================
+
+By default you are subscribed to all new collective github repository notifications.
+Unless you disable this yourself soon your inbox will contain only Github spam.
+
+* Go to https://github.com/watching
+
+* Select what to watch or Uncheck *Automatically watch*.  But attention: latter will 
+  disable watch for all organizations.
+
 How to manage permissions and repositories
 ==========================================
 
@@ -41,7 +52,7 @@ repository.
 
 3. **commit, push** and create a **pull request**. 
 
-We scheduled a script that runs every 10min and checks for differences and
+We scheduled a script that runs every hour and checks for differences and
 updates them. 
 
 Inside `permissions.cfg`_ file you have a list of teams and repositories.
@@ -116,6 +127,8 @@ Follow the steps below for migration.
 4. Some housekeeping
 
    - Rename ``README.txt`` to ``README.rst``, update ``setup.py`` to reflect this change,
+
+   - Add a ``MANIFEST.in`` to include the ``*.rst`` files containing at least one line ``include *.rst``,
 
    - Update links in ``README.rst`` to point to Github project
 
