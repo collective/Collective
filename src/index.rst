@@ -21,7 +21,7 @@ How to get access
 - Fork `collective.github.com`_ repository, edit ``permissions.cfg`` file, 
   commit and push it and send us a Pull Request (see section below for details).
 
-- File a ticket that you want permission here:
+- Add a new issue to our issue tracker and tell us that you want access:
   https://github.com/collective/collective.github.com/issues
   (may take longer to process than forking, because a human needs to work more here)
 
