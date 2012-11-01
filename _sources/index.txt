@@ -161,7 +161,7 @@ Here is an example session of moving ``collective.logbook`` to Github on OSX Mou
     
     # Wait someone accepts your permissions.cfg pull request
     
-    # It will take 5 minutes to for a script to update github.com/collective permission after permissions.cfg has been merged
+    # It will take about an hour to for a script to update github.com/collective permission after permissions.cfg has been merged
     cd collective.logbook
     git push git@github.com:collective/collective.logbook.git
     
