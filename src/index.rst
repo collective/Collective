@@ -138,7 +138,8 @@ Follow the steps below for migration.
      additional/optional tweet about it, write a line at IRC, if worth write a
      blog post, ... to notify the community about it.
 
-Here is an example session of moving ``collective.logbook`` to Github on OSX Mountain Lion / Macports::
+Here is an example session of moving ``collective.logbook`` to Github on OSX Mountain Lion / Macports (see 
+`Ubuntu instructions for installing svn2git <http://ubuntuforums.org/showthread.php?t=1176032>`_)::
 
     # Install required software through Macports
     sudo port install git-core +svn
