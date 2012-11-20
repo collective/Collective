@@ -21,9 +21,20 @@ How to get access
 - Fork `collective.github.com`_ repository, edit ``permissions.cfg`` file, 
   commit and push it and send us a Pull Request (see section below for details).
 
-- File a ticket that you want permission here:
+- Add a new issue to our issue tracker and tell us that you want access:
   https://github.com/collective/collective.github.com/issues
   (may take longer to process than forking, because a human needs to work more here)
+
+Disabling notification spam
+==============================
+
+By default you are subscribed to all new collective github repository notifications.
+Unless you disable this yourself soon your inbox will contain only Github spam.
+
+* Go to https://github.com/watching
+
+* Select what to watch or Uncheck *Automatically watch*.  But attention: latter will 
+  disable watch for all organizations.
 
 How to manage permissions and repositories
 ==========================================
@@ -41,7 +52,7 @@ repository.
 
 3. **commit, push** and create a **pull request**. 
 
-We scheduled a script that runs every 10min and checks for differences and
+We scheduled a script that runs every hour and checks for differences and
 updates them. 
 
 Inside `permissions.cfg`_ file you have a list of teams and repositories.
@@ -117,6 +128,8 @@ Follow the steps below for migration.
 
    - Rename ``README.txt`` to ``README.rst``, update ``setup.py`` to reflect this change,
 
+   - Add a ``MANIFEST.in`` to include the ``*.rst`` files containing at least one line ``include *.rst``,
+
    - Update links in ``README.rst`` to point to Github project
 
    - Update links on `plone.org product page <http://plone.org/products>`_ to point to Github repository
@@ -125,7 +138,8 @@ Follow the steps below for migration.
      additional/optional tweet about it, write a line at IRC, if worth write a
      blog post, ... to notify the community about it.
 
-Here is an example session of moving ``collective.logbook`` to Github on OSX Mountain Lion / Macports::
+Here is an example session of moving ``collective.logbook`` to Github on OSX Mountain Lion / Macports (see 
+`Ubuntu instructions for installing svn2git <http://ubuntuforums.org/showthread.php?t=1176032>`_)::
 
     # Install required software through Macports
     sudo port install git-core +svn
