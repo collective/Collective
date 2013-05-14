@@ -19,8 +19,10 @@ Here is an example session of moving ``collective.logbook`` to Github on OSX Mou
     svn2git http://svn.plone.org/svn/collective/collective.logbook/
     
     # Push the git-svn checkout to github:
-    git push git@github.com:collective/collective.logbook.git
-    
+    git remote add origin git@github.com:collective/collective.logbook.git
+    git push -u origin master
+
+
     # Move old trunk
     cd ..
     svn mv -m "Moved to github" https://svn.plone.org/svn/collective/collective.logbook/trunk/ https://svn.plone.org/svn/collective/collective.logbook/trunk.old
