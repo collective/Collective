@@ -20,7 +20,8 @@ Here is an example session of moving ``collective.logbook`` to Github on OSX Mou
     
     # Push the git-svn checkout to github:
     git remote add origin git@github.com:collective/collective.logbook.git
-    git push -u origin master
+    git push -u --all
+    git push --tags
 
 
     # Move old trunk
