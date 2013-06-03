@@ -87,7 +87,7 @@ Push code to github / Backup the old one
     
 - After migrating, push the git-svn checkout to github::
 
-      git remote add origin git@github.com:collective/${PRODUCTNAME}.git
+    git remote add origin git@github.com:collective/${PRODUCTNAME}.git
     git push -u --all
     git push --tags
 
