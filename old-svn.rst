@@ -21,12 +21,12 @@ install svn2git (https://github.com/nirvdrum/svn2git):
 
     - On ubuntu::
 
-      sudo apt-get install git-core git-svn ruby rubygems
-      sudo gem install svn2git
+      	sudo apt-get install git-core git-svn ruby rubygems
+      	sudo gem install svn2git
 
     - Generic: install svn2git as a Ruby gem::
 
-      sudo gem install svn2git / su -c 'gem install svn2git'
+      	sudo gem install svn2git / su -c 'gem install svn2git'
 
 Make a proper git-svn fork
 ------------------------------
