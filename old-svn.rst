@@ -31,6 +31,9 @@ install svn2git (https://github.com/nirvdrum/svn2git):
 Make a proper git-svn fork
 ------------------------------
 
+You can automate this step using the ``plone-collective-svn2git.sh``
+in this repository.
+
 - Set your product name to be available in shell
 
     export PRODUCTNAME="collective.logbook"
