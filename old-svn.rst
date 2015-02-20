@@ -7,7 +7,7 @@ Instructions made for ``svn.plone.org/collective``.
 
 You have two options, calling directly git svn clone or use svn2git
 
-Here is an example session of moving ``collective.logbook`` to Github
+Here is an example session of moving ``collective.logbook`` to GitHub
 
 Prerequisites
 -----------------
@@ -31,10 +31,11 @@ install svn2git (https://github.com/nirvdrum/svn2git):
 Make a proper git-svn fork
 ------------------------------
 
-You can automate this step using the ``plone-collective-svn2git.sh``
+You can automate this step using `plone-collective-svn2git.sh
+<https://raw.githubusercontent.com/collective/collective.github.com/master/plone-collective-svn2git.sh>`_
 in this repository.
 
-- Set your product name to be available in shell
+- Set your product name to be available in shell ::
 
     export PRODUCTNAME="collective.logbook"
 
@@ -48,7 +49,7 @@ in this repository.
   
     svn log -q http://svn.plone.org/svn/collective/${PRODUCTNAME} > ../LOG
     
-- Optionnal but recommended: Remap authors commiters to ``FullName <email>``
+- Optional but recommended: Remap authors commiters to ``FullName <email>``
 
     - Take care of remapping to github accounts fullname/email pairs if they exists::
     
@@ -66,8 +67,8 @@ in this repository.
 	...    
     
 - Run svn2git
-  Note: the following takes 30+ minutes to complete on fast internet connection
-  , as it walks through every of 150k+ commits in Collective SVN
+  Note: the following takes 30+ minutes to complete on fast internet connection,
+  as it walks through every of 150k+ commits in Collective SVN
 
     - To not grab all collective revisions, we will compute the last and first revisions and give them to svn2git with::
 
