@@ -1,6 +1,9 @@
 Moving SVN repositories to Github
 ======================================
 
+There is now an easier solution to import an existing package, see
+https://import.github.com/new
+
 .. contents::
 
 Instructions made for ``svn.plone.org/collective``.
