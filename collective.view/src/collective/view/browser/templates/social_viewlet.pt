@@ -1,0 +1,9 @@
+<div id="social-links">
+    <a href="#"
+       class="lanyrd-link"
+       tal:define="link view/lanyrd_link"
+       tal:condition="link"
+       tal:attributes="href link">
+        Here,you can have a look at Lanyard's talk!
+    </a>
+</div>

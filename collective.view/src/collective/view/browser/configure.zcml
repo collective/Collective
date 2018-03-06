@@ -17,12 +17,23 @@
       type="plone"
       directory="static"
       />
-  
+<!--Registration for the view-->  
   <browser:page
   for="*"
   name="test"
   permission="zope2.Public"
   template="templates/myview.pt"
   />  
-
+<!--Registration for the viewlet-->
+  
+  <browser:viewlet
+  name="social"
+  for="ploneconf.site.behaviors.social.ISocial"
+  manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+  class=".viewlets.SocialViewlet"
+  layer="zope.interface.Interface"
+  template="templates/social_viewlet.pt"
+  permission="zope2.View"
+  />
+  
 </configure>
