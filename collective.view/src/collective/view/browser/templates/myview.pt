@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="ploneconf.site">
+<body>
+
+<metal:content-core fill-slot="content-core">
+
+<h1 tal:content="python: view.the_title()" />
+
+<table class="listing">
+    <tr>
+        <th tal content:"string:title">Title</th>
+        <th tal content:"string:Topics">Subjects</th>
+    </tr>
+
+    <tr tal:repeat="talk python:view.talks()">
+        <td>
+            <a href="${python:talk['url']}">
+                ${python:talk['title']}
+            </a>
+        </td>
+        <td>
+            ${python:talk['subjects']}
+        </td>
+    </tr>
+</table>
+
+</metal:content-core>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.view">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="collective.view.interfaces.ICollectiveViewLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="collective.view"
+      type="plone"
+      directory="static"
+      />
+  
+  <browser:page
+  for="*"
+  name="test"
+  permission="zope2.Public"
+  template="templates/myview.pt"
+  />  
+
+</configure>
