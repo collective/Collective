@@ -1,6 +1,6 @@
 .. image:: https://avatars1.githubusercontent.com/u/362867?s=200&v=4
     :target: https://collective.github.io/
-`Collective <https://collective.github.io/>`_ This is an organization for developers of `Plone <https://plone.org/>`_ add-ons and related software. It is mangaged in the spirit of a collective: 
+`Collective <https://collective.github.io/>`_ is an organization for developers of `Plone <https://plone.org/>`_ add-ons and related software. It is mangaged in the spirit of a collective: 
 
 Every repository may define own rules how to deal with it.
 
