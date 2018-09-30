@@ -22,7 +22,7 @@ install svn2git (https://github.com/nirvdrum/svn2git):
         sudo port install rb-rubygems
         sudo gem install svn2git
 
-    - On ubuntu::
+    - On Debian / Ubuntu::
 
       	sudo apt-get install git-core git-svn ruby rubygems
       	sudo gem install svn2git
@@ -50,7 +50,7 @@ in this repository.
     
 - Grab the log from your addon and note the start and env revisions here we have : start:78034 / end:246764::
   
-    svn log -q http://svn.plone.org/svn/collective/${PRODUCTNAME} > ../LOG
+    svn log -q https://svn.plone.org/svn/collective/${PRODUCTNAME} > ../LOG
     
 - Optional but recommended: Remap authors commiters to ``FullName <email>``
 
@@ -83,11 +83,11 @@ in this repository.
 
     - If you have the authors file::
   
-	svn2git --authors ../authors-transform.txt --revision $REVS -v http://svn.plone.org/svn/collective/${PRODUCTNAME}
+	svn2git --authors ../authors-transform.txt --revision $REVS -v https://svn.plone.org/svn/collective/${PRODUCTNAME}
 
     - If you do not have the authors file::
 
-	svn2git --revision $REVS -v http://svn.plone.org/svn/collective/${PRODUCTNAME}
+	svn2git --revision $REVS -v https://svn.plone.org/svn/collective/${PRODUCTNAME}
 
 Push code to github / Backup the old one
 ---------------------------------------------
