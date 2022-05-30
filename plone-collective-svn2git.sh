@@ -22,6 +22,8 @@
 
 set -e
 
+
+
 SVN2GIT=${SVN2GIT:-svn2git}
 
 [ -x $SVN2GIT ] ||
