@@ -4,7 +4,7 @@
 
 Every repository may define own rules how to deal with it.
 
-Code ownership is reduced to this rules and the usual legal boundaries.
+Code ownership is reduced to this rules and the usual legal boundaries. 
 
 See https://collective.github.io/ on how to request access/join the collective.
 
