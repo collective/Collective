@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-# I read
+# I checked
 
 - [ ] I understand that the Collective is dedicated to projects related to Plone.
 - [ ] I read https://collective.github.io/
